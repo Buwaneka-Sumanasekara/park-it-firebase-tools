@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "parkit-test-4815e",
+    "prod": "parkit-551bc"
+  }
+}
