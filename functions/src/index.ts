@@ -1,4 +1,9 @@
+import * as admin from 'firebase-admin';
+
 import * as api from './api';
+
+// Initializes Cloud Functions.
+admin.initializeApp();
 
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript
