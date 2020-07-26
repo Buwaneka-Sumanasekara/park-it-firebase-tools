@@ -53,7 +53,16 @@ $ firebase deploy --except functions
 ```
 
 
+Local testing
+```sh
+$ cd functions
+$ npm run hotReload
 
+OR
+
+$ firebase emulators:start --only functions
+$ firebase serve --only functions
+```
 
    [React-Js]: <https://reactjs.org/>
    [Firebase]: <http://firebase.google.com/>
