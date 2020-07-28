@@ -5,6 +5,7 @@ import * as cors from "cors";
 
 import * as testApi from './test';
 import * as userApi from './user';
+import * as companyApi from './company';
 
 
 
@@ -15,6 +16,11 @@ app.use(cors());
 app.use(userApi.validateFirebaseIdToken);
 app.get('/test', testApi.testAPIFun);
 app.get('/test2', testApi.testAPIFun);
+
+app.get('/user', userApi.getUserDetails);
+
+app.post('/company', companyApi.createCompany);
+app.get('/companies', companyApi.getCompanies);
 
 
 const main = express();
